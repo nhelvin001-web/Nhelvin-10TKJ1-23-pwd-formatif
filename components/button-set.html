@@ -5,62 +5,82 @@
     <title>Tombol</title>
     <style>
       body {
-        background-color: #f9f9f9;
-        font-family: Arial, sans-serif;
-        padding: 20px;
+        background-color: #fafafa;
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        padding: 40px;
       }
       h2 {
-        color: darkblue;
+        color: #2c3e50;
         font-size: 20px;
+        margin-bottom: 20px;
       }
+
+      /* Tombol dibuat bulat */
       .btn {
         display: inline-block;
         padding: 12px 24px;
-        border-radius: 8px;
+        border-radius: 50px; /* fungsi nya agar mbulat */
         font-weight: bold;
         text-decoration: none;
-        cursor: pointer;
+        font-size: 14px;
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
       }
+
       .button-group .btn {
         margin-right: 10px;
         margin-bottom: 10px;
       }
+
       .btn-primary {
-        background-color: #003366;
+        background-color: #6c5ce7;
         color: white;
+        box-shadow: 0 4px 6px rgba(108, 92, 231, 0.3);
       }
       .btn-secondary {
-        background-color: #e0e0e0;
+        background-color: #dfe6e9;
+        color: #2d3436;
       }
       .btn-outline {
-        background-color: white;
-        border: 2px solid #003366;
+        background-color: transparent;
+        border: 2px solid #6c5ce7;
+        color: #6c5ce7;
       }
       .btn-send {
-        background-color: rgb(200, 100, 0);
-        color: white;
+        background-color: rgb(253, 203, 110);
+        color: #2d3436;
+        box-shadow: 0 4px 6px rgba(253, 203, 110, 0.3);
       }
+
       .btn-secondary,
       .btn-outline {
-        color: #333333;
+        color: #2d3436;
       }
+
+      /* Efek hover: terangkat sedikit ktika mouse menghmapiri */
       .btn-primary:hover {
-        background-color: navy;
+        background-color: #5b4bc4;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 8px rgba(108, 92, 231, 0.4);
       }
       .btn-secondary:hover {
-        background-color: grey;
+        background-color: #b2bec3;
+        transform: translateY(-3px);
       }
       .btn-outline:hover {
-        background-color: lightgrey;
+        background-color: #f1f2f6;
+        transform: translateY(-3px);
       }
       .btn-send:hover {
-        background-color: rgba(150, 50, 0, 1);
+        background-color: rgba(235, 180, 80, 1);
+        transform: translateY(-3px);
       }
     </style>
   </head>
   <body>
     <main>
-      <h2>Daftar Tombol</h2>
+      <h2>Pilihan Tombol</h2>
       <div class="button-group">
         <a href="#" class="btn btn-primary">Lihat Proyek</a>
         <a href="#" class="btn btn-secondary">Unduh CV</a>
@@ -68,8 +88,8 @@
         <a href="#" class="btn btn-send">Kirim Pesan</a>
       </div>
     </main>
-    <footer style="margin-top: 30px">
-      <a href="../index.html">Kembali ke Beranda</a>
+    <footer style="margin-top: 40px">
+      <a href="../index.html" style="color: #6c5ce7">Kembali ke Beranda</a>
     </footer>
   </body>
 </html>
