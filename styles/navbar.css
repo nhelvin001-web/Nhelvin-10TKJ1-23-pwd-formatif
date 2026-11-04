@@ -1,49 +1,39 @@
-/* Tag selector */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
-/* ID Selector */
 #main-header {
-  background-color: #1e293b;
+  background-color: #0a0a0a;
+  border-bottom: 2px solid #f1c40f;
 }
-
-/* Class Selector: Flexbox untuk Navbar */
 .navbar {
   display: flex;
-  justify-content: space-between; /* Logo kiri, menu kanan */
-  align-items: center; /* Sejajar di tengah secara tegak */
-  padding: 15px 30px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
 }
-
-/* Class Selector */
 .logo {
-  color: white;
-  font-size: 22px;
-  font-weight: bold;
+  color: #f1c40f;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 2px;
 }
-
-/* Class Selector */
 .nav-menu {
   display: flex;
-  gap: 24px; /* Jarak antar menu */
+  gap: 30px;
   margin: 0;
   padding: 0;
 }
-
-/* Child Selector: Hanya li yang langsung di bawah nav-menu */
 .nav-menu > li {
   list-style: none;
 }
-
-/* Descendant Selector */
 .nav-menu a {
-  color: white;
+  color: #bdc3c7;
   text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: color 0.3s;
 }
-
-/* Pseudo-class */
 .nav-menu a:hover {
-  color: #f59e0b;
+  color: #f1c40f;
 }
