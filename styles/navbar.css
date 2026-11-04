@@ -1,0 +1,49 @@
+/* Tag selector */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ID Selector */
+#main-header {
+  background-color: #1e293b;
+}
+
+/* Class Selector: Flexbox untuk Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Logo kiri, menu kanan */
+  align-items: center; /* Sejajar di tengah secara tegak */
+  padding: 15px 30px;
+}
+
+/* Class Selector */
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Class Selector */
+.nav-menu {
+  display: flex;
+  gap: 24px; /* Jarak antar menu */
+  margin: 0;
+  padding: 0;
+}
+
+/* Child Selector: Hanya li yang langsung di bawah nav-menu */
+.nav-menu > li {
+  list-style: none;
+}
+
+/* Descendant Selector */
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Pseudo-class */
+.nav-menu a:hover {
+  color: #f59e0b;
+}
