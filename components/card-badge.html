@@ -7,54 +7,67 @@
       body {
         font-family: Arial, sans-serif;
         margin: 0;
+        background-color: #f0f0f0;
       }
       #top {
-        padding: 20px;
-        background-color: #1e293b;
-        color: white;
+        padding: 30px;
+        background-color: #111;
+        color: #00ffcc;
         text-align: center;
+        letter-spacing: 2px;
       }
+
       .card {
         position: relative;
         width: 360px;
-        margin: 30px auto;
-        border: 1px solid #ccc;
-        padding: 15px;
+        margin: 40px auto;
+        border: 1px solid #ddd;
+        padding: 20px;
         background-color: white;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
       }
+
+      /* Label seperti selotip miring */
       .card .badge {
         position: absolute;
-        top: 10px;
-        right: 10px;
-        background-color: #f59e0b;
+        top: -10px;
+        right: 20px;
+        background-color: #ff4757;
         color: white;
-        padding: 4px 8px;
-        border-radius: 12px;
+        padding: 6px 15px;
         font-size: 12px;
         font-weight: bold;
+        transform: rotate(5deg);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
       }
+
       .card img {
         width: 100%;
-        border-radius: 5px;
+        border-radius: 4px;
       }
       main p {
         width: 360px;
         margin: 0 auto 15px auto;
         line-height: 1.6;
+        color: #444;
       }
+
+      /* Tombol ke atas warna neon */
       .back-to-top {
         position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #1e293b;
-        color: white;
-        padding: 10px 15px;
+        bottom: 30px;
+        right: 30px;
+        background-color: #00ffcc;
+        color: #111;
+        padding: 15px 20px;
         text-decoration: none;
-        border-radius: 5px;
+        border-radius: 50%;
+        font-weight: bold;
+        box-shadow: 0 4px 15px rgba(0, 255, 204, 0.4);
         z-index: 1000;
       }
       .back-to-top:hover {
-        background-color: #f59e0b;
+        background-color: #00cca3;
       }
     </style>
   </head>
@@ -63,18 +76,14 @@
     <main>
       <div class="card">
         <span class="badge">BARU</span>
-        <img
-          src="../assets/images/second project.jpg"
-          alt="Nhelvin Second Project"
-        />
-        <h3 style="color: #1e293b">Aplikasi Catatan</h3>
-        <p style="color: #1e293b">
-          Halaman pencatat kegiatan harian dengan tampilan sederhana.
-        </p>
+        <img src="../assets/images/second project.jpg" alt="Proyek ledua" />
+        <h3>Aplikasi Catatan</h3>
+        <p>Halaman pencatat kegiatan harian dengan tampilan sederhana.</p>
       </div>
+      <!-- Paragraf pengisi -->
       <p>
-        Paragraf pengisi 1. Saya membuat ini karena gar halaman bisa digulir dan
-        tombol Ke Atas terlihat. Dan Mirip seperti di file
+        Paragraf pengisi 1. Agar halaman bisa digulir dan tombol Ke Atas
+        terlihat.
       </p>
       <p>
         Paragraf pengisi 2. Agar halaman bisa digulir dan tombol Ke Atas
@@ -94,12 +103,12 @@
       </p>
       <p>
         Paragraf pengisi 6. Agar halaman bisa digulir dan tombol Ke Atas
-        terlihat. dan ada perbedaan besar ketika tombol keatas di pencet
+        terlihat.
       </p>
     </main>
     <footer style="text-align: center; margin-top: 30px; margin-bottom: 50px">
       <a href="../index.html">Kembali ke Beranda</a>
     </footer>
-    <a href="#top" class="back-to-top">Ke Atas</a>
+    <a href="#top" class="back-to-top">↑</a>
   </body>
 </html>
