@@ -5,56 +5,67 @@
     <title>Kontak</title>
     <style>
       body {
-        background-color: #f9f9f9;
-        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        font-family: "Helvetica Neue", sans-serif;
       }
       #contact {
-        padding: 40px 20px;
+        padding: 60px 20px;
       }
       .contact-form {
         width: 400px;
         margin: 0 auto;
-        padding: 24px;
-        border: 1px solid #ccc;
-        background-color: white;
-        border-radius: 8px;
+        padding: 30px;
       }
       .contact-form h2 {
         text-align: center;
-        color: #1e293b;
+        color: #333;
+        font-weight: 300;
+        letter-spacing: 1px;
       }
       .form-group {
-        margin-bottom: 16px;
+        margin-bottom: 24px;
       }
       .form-group label {
         display: block;
-        font-weight: bold;
-        margin-bottom: 6px;
+        font-size: 14px;
+        margin-bottom: 8px;
+        color: #666;
+        text-transform: uppercase;
       }
+
+      /* Input hanya garis bawah */
       .form-group input,
       .form-group textarea {
         width: 100%;
         box-sizing: border-box;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 6px;
+        padding: 10px 0;
+        border: none;
+        border-bottom: 2px solid #ccc;
+        background-color: transparent;
+        font-family: inherit;
+        font-size: 16px;
+        transition: border-color 0.3s;
       }
+
+      /* Focus mengubah warna garis bawah */
       .form-group input:focus,
       .form-group textarea:focus {
-        background-color: #e0f2fe;
-        border-color: #3b82f6;
+        border-bottom-color: #e67e22;
         outline: none;
       }
+
       .btn-submit {
-        background-color: #1e293b;
+        background-color: #e67e22;
         color: white;
-        padding: 12px 20px;
+        padding: 14px 24px;
         border: none;
-        border-radius: 6px;
+        width: 100%;
+        font-size: 16px;
         cursor: pointer;
+        transition: background-color 0.3s;
       }
       .btn-submit:hover {
-        background-color: #3b82f6;
+        background-color: #d35400;
       }
     </style>
   </head>
@@ -72,13 +83,13 @@
         </div>
         <div class="form-group">
           <label for="pesan">Pesan</label>
-          <textarea id="pesan" rows="5" placeholder="Tulis pesan"></textarea>
+          <textarea id="pesan" rows="4" placeholder="Tulis pesan"></textarea>
         </div>
         <button type="submit" class="btn-submit">Kirim Pesan</button>
       </form>
     </section>
     <footer style="text-align: center; margin-top: 20px">
-      <a href="../index.html">Kembali ke Beranda</a>
+      <a href="../index.html" style="color: #666">Kembali ke Beranda</a>
     </footer>
   </body>
 </html>
