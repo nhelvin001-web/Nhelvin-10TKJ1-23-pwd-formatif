@@ -1,70 +1,42 @@
 body {
   font-family: Arial, sans-serif;
-  padding: 40px;
-  background-color: #f1f5f9;
+  padding: 30px;
+  background-color: #ffffff;
 }
-
 .menu a {
   text-decoration: none;
-  color: #334155;
+  color: #6c757d;
   margin-right: 20px;
   font-weight: bold;
-  border-bottom: 2px solid transparent;
-  transition:
-    border-color 0.3s ease,
-    color 0.3s;
+  transition: color 0.3s ease;
 }
 .menu a:hover {
-  color: #0f172a;
-  border-bottom: 2px solid #0f172a;
+  color: #0056b3;
 }
-
 .btn {
   display: inline-block;
-  padding: 15px 30px;
-  border-radius: 8px;
+  padding: 12px 24px;
+  border-radius: 6px;
   text-decoration: none;
   color: white;
   font-weight: bold;
-  text-align: center;
-  margin-right: 15px;
+  margin-right: 10px;
 }
-
-/* Tombol 3D */
 .btn-grow {
-  background-color: #10b981;
-  box-shadow: 0 6px 0 #047857; /* Bayangan tombol */
-  transition:
-    transform 0.1s,
-    box-shadow 0.1s;
+  background-color: #28a745;
+  transition: transform 0.3s ease-out;
 }
 .btn-grow:hover {
-  transform: translateY(2px);
-  box-shadow: 0 4px 0 #047857;
+  transform: scale(1.05);
 }
-.btn-grow:active {
-  transform: translateY(6px);
-  box-shadow: 0 0 0 #047857;
-}
-
 .btn-darken {
-  background-color: #f43f5e;
-  box-shadow: 0 6px 0 #be123c;
-  transition:
-    transform 0.1s,
-    box-shadow 0.1s;
+  background-color: #fd7e14;
+  transition: background-color 0.4s linear;
 }
 .btn-darken:hover {
-  transform: translateY(2px);
-  box-shadow: 0 4px 0 #be123c;
-  background-color: #e11d48;
+  background-color: #d65f00;
 }
-.btn-darken:active {
-  transform: translateY(6px);
-  box-shadow: 0 0 0 #be123c;
-}
-
 a:focus {
-  outline: 3px dotted #0f172a;
+  outline: 2px dashed #0056b3;
   outline-offset: 4px;
 }
