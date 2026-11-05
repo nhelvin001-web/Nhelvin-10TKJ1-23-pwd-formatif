@@ -1,62 +1,41 @@
 body {
   margin: 0;
-  font-family: "Impact", sans-serif;
+  font-family: Arial, sans-serif;
 }
 #hero {
-  height: 100vh;
-  background: linear-gradient(135deg, #1e1b4b, #312e81);
+  height: 400px;
+  background-color: #e9ecef;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .hero-content {
   width: 640px;
-  padding: 40px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 2px solid #818cf8;
-  border-radius: 0;
-  color: white;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 .hero-content h1,
 .hero-content p {
   animation: slide-up 1.2s ease-out 0.3s 1 normal backwards;
 }
-
-.hero-content h1 {
-  font-size: 48px;
-  letter-spacing: 2px;
-  text-shadow: 4px 4px 0px #f43f5e;
-  margin-bottom: 10px;
-}
 .hero-content p {
   animation-delay: 0.6s;
-  font-size: 20px;
-  font-family: "Courier New", monospace;
-  color: #a5b4fc;
+  font-size: 18px;
+  color: #6c757d;
 }
-
 .btn {
   display: inline-block;
-  margin-top: 25px;
-  padding: 15px 30px;
-  background-color: #f43f5e;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0056b3;
   color: white;
   text-decoration: none;
-  font-family: Arial, sans-serif;
+  border-radius: 4px;
   font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border: 2px solid white;
-  transition: 0.3s;
 }
-.btn:hover {
-  background-color: white;
-  color: #f43f5e;
-}
-
 @keyframes slide-up {
   0% {
     transform: translateY(60px);
