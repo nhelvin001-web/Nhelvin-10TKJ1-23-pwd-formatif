@@ -1,26 +1,24 @@
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: Arial, sans-serif;
 }
 #main-header {
-  background-color: #0a0a0a;
-  border-bottom: 2px solid #f1c40f;
+  background-color: #343a40;
 }
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 15px 30px;
 }
 .logo {
-  color: #f1c40f;
-  font-size: 24px;
-  font-weight: 900;
-  letter-spacing: 2px;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
 }
 .nav-menu {
   display: flex;
-  gap: 30px;
+  gap: 24px;
   margin: 0;
   padding: 0;
 }
@@ -28,12 +26,10 @@ body {
   list-style: none;
 }
 .nav-menu a {
-  color: #bdc3c7;
+  color: #f8f9fa;
   text-decoration: none;
-  font-size: 14px;
-  text-transform: uppercase;
-  transition: color 0.3s;
+  font-size: 15px;
 }
 .nav-menu a:hover {
-  color: #f1c40f;
+  color: #ffc107;
 }
